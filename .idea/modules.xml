@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../hathlogic/hl/.idea/hl.iml" filepath="$PROJECT_DIR$/../../hathlogic/hl/.idea/hl.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/mypjt.iml" filepath="$PROJECT_DIR$/.idea/mypjt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../smallworld/smw/.idea/smw.iml" filepath="$PROJECT_DIR$/../../smallworld/smw/.idea/smw.iml" />
     </modules>
   </component>
 </project>

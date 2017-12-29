@@ -1,0 +1,149 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+    <title>{% block title %} Asn {% endblock title %}</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import fontawesome stylesheet-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="{% static 'css/materialize.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> {{form.media}}
+</head>
+
+<body>
+    <div class="main-body">
+      <nav class="nav-extended">
+        <div class="nav-content">
+          <ul class="tabs tabs-transparent">
+            <li class="tab"><a target="_self" href="{% url 'index' %}">Home</a></li>
+            <li class="tab"><a target="_self" href="{% url 'about:about' %}">About</a></li>
+            <li class="tab"><a target="_self" href="{% url 'portfolio:portfolio' %}">Portfolio</a></li>
+            <li class="tab"><a target="_self" href="{% url 'blog:blogs' %}">Blogs</a></li>
+            <li class="tab disabled"><a target="_self"  href="#test4">Contact</a></li>
+              <ul class="social">
+                  <li> <a class="fa fa-facebook" aria-hidden="true" href="http://www.facebook.com/abhishek.sn.me" title="Like me on Facebook" target="_blank"></a></li>
+                  <li> <a class="fa fa-instagram" aria-hidden="true" href="http://www.instagram.com/snabhishek16" title="Love me on Insta" target="_blank"></a></li>
+                  <li> <a class="fa fa-linkedin" aria-hidden="true" href="https://www.linkedin.com/in/abhishek-sn-gowda-52118b88/" title="Connect with me on Linkedin" target="_blank"></a></li>
+                  <li> <a class="fa fa-github" aria-hidden="true" href="https://github.com/snabhishek16" title="Connect with me on Github" target="_blank"></a></li>
+                  <li> <a class="fa fa-twitter" aria-hidden="true" href="https://twitter.com/snabhishek16" title="Tweet me on Twitter" target="_blank"></a></li>
+                  <li> <a class="fa fa-skype" aria-hidden="true" href="skype:snabhishek16" title="Connect with me on Skype" target="_blank"></a></li>
+              </ul>
+              <li class="indicator" style="right: 1236px; left: 0px;"></li>
+          </ul>
+        </div>
+      </nav>
+        <div>
+         <ul id="nav-mobile" class="side-nav fixed" style="transform: translateX(0%);">
+            <div><img src="/static/images/asn_logo.jpg" alt="preview" width="220" height="140"></div>
+            <li class="bold"><a href="#" data-activates="slide-out" class="button-collapse">My Profile</a></li>
+            <li><div class="divider"></div></li>
+            <li class="no-padding">
+              <ul class="collapsible collapsible-accordion">
+                <li class="bold"><a class="collapsible-header waves-effect waves-teal">Skills</a>
+                  <div class="collapsible-body">
+                    <ul>
+                      <li><a href="#">Japanese language</a></li>
+                      <li><a href="#">Programming</a></li>
+                      <li><a href="#">DCS</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="bold"><a class="collapsible-header waves-effect waves-teal">Experience</a>
+                  <div class="collapsible-body">
+                    <ul>
+                      <li><a href="#">Hathlogic</a></li>
+                      <li><a href="#">Yokogawa india ltd</a></li>
+                      <li><a href="#">BHEL</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="bold"><a class="collapsible-header waves-effect waves-teal">Hobbies</a>
+                  <div class="collapsible-body">
+                    <ul>
+                      <li><a href="#">Road trips</a></li>
+                      <li><a href="#">Hiking</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="bold"><a href="#" class="waves-effect waves-teal">*Get in touch</a></li>
+            <li class="bold"><a class="btn" onclick="Materialize.toast('Ouuccchhhh!', 4000,'',function(){alert('Dont repeat it')})">Hit me</a></li>
+          </ul>
+    <ul id="slide-out" class="side-nav">
+        <li><div class="user-view">
+          <div class="background">
+            <img src="/static/images/home.jpg">
+          </div>
+          <a href="#!user"><img class="circle" src="/static/images/sample.JPG"></a>
+          <a href="#!name"><span class="Black-text name">Abhishek SN</span></a>
+          <a href="#!email"><span class="Black-text email">Developer,<br>Japanese translator/<br>interpreter,</br>project manager<br></span></a>
+        </div></li>
+        <li><a href="#!"><i class="material-icons">domain</i>Hathlogic</a></li>
+        <li><a href="#!"><i class="material-icons">location_on</i>Bengaluru</a></li>
+        <li><a class="subheader">Former company</a></li>
+        <li><a class="waves-effect" href="#!">Yokogawa india ltd</a></li>
+    </ul>
+    </div>
+
+
+    {% block content %}
+    {% endblock content %}
+
+
+    <footer class="page-footer">
+              <div class="container">
+                <div class="row">
+                  <div class="col l6 s12">
+                    <h5 class="white-text">Footer Content</h5>
+                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                  </div>
+                  <div class="col l4 offset-l2 s12">
+                      <a href="#top"><i class="material-icons">keyboard_arrow_up</i></a>
+                    <ul>
+                      <li><a class="grey-text text-lighten-3" target="_self" href="{% url 'index' %}">Home</a></li>
+                      <li><a class="grey-text text-lighten-3" target="_self" href="{% url 'about:about' %}">About</a></li>
+                      <li><a class="grey-text text-lighten-3" target="_self" href="{% url 'portfolio:portfolio' %}">Portfolio</a></li>
+                      <li><a class="grey-text text-lighten-3" target="_self" href="{% url 'blog:blogs' %}">Blogs</a></li>
+                      <li><a class="grey-text text-lighten-3" target="_self" href="#">Contact</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-copyright">
+                <div class="container center">
+                © 2017 Copyright Text
+                </div>
+              </div>
+            </footer>
+</body>
+<!--Import jQuery before materialize.js-->
+<script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="{% static 'js/materialize.js' %}"></script>
+<script>
+    $(document).ready(function() {
+        $('select').material_select();
+        $(".button-collapse").sideNav();
+
+    });
+</script>
+<script>
+
+    $(document).ready(function(){
+    $('ul.tabs').tabs('select_tab', 'about');
+  });
+
+</script>
+
+
+</html>

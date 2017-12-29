@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+<div class="blog">
+    <div class="row blog-banner valign-wrapper">
+        <div class="col s12">
+            <h1 class=" blog-banner-heading center">
+                Portfolio
+            </h1>
+            <p class=" blog-banner-subheading center">
+                Lorem ipsum
+            </p>
+        </div>
+    </div>
+
+
+    <div class="blog-content custom-container row">
+        <div class="row portfolio-list">
+                {% if all_portfolios %}
+                {% for obj in all_portfolios %}
+
+                <div class="col s12 m6 l4">
+
+                        <div class="card small">
+                            <div class="card-image waves-effect waves-block waves-light">
+                              <img class="activator" src="{{obj.image.url}}">
+                            </div>
+                            <div class="card-content">
+                              <span class="card-title activator grey-text text-darken-4">{{obj.card_title}}<i class="material-icons right">more_vert</i></span>
+                            </div>
+                            <div class="card-action">
+                                <a href="{{obj.id}}">Read more</a>
+                            </div>
+                            <div class="card-reveal">
+                              <span class="card-title grey-text text-darken-4">{{obj.card_title}}<i class="material-icons right">close</i></span>
+                              <p>{{obj.content}}</p>
+                            </div>
+                        </div>
+                </div>
+                {% endfor %}
+                {% endif %}
+
+        </div>
+    </div>
+</div>
+
+    <div row>
+        <div class="center">
+            <ul class="pagination">
+                <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                <li class="active"><a href="#!">1</a></li>
+                <li class="waves-effect"><a href="#!">2</a></li>
+                <li class="waves-effect"><a href="#!">3</a></li>
+                <li class="waves-effect"><a href="#!">4</a></li>
+                <li class="waves-effect"><a href="#!">5</a></li>
+                <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+{% endblock content %}
+
+{% block script %}
+
+{% endblock script %}

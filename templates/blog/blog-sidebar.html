@@ -1,0 +1,60 @@
+<div class="row">
+    <div class="col s12">
+        <div class="blog-search">
+            <input type="text" class="fa-placholder" placeholder="&nbsp; &#xf002; ">
+
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col s12">
+        <div class="blog-categories">
+            <div class="collection">
+                <a href="#!" class="collection-item">Travel</a>
+                <a href="#!" class="collection-item active">Miscellaneous</a>
+                <a href="#!" class="collection-item">Daily Life</a>
+                <a href="#!" class="collection-item">Food</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row blog-recent-posts">
+        <div class="col s12">
+            <ul class="collection with-header">
+                <li class="collection-header"><h5>Recent Posts</h5></li>
+                {% if posts_latest %}
+                {% for post in posts_latest %}
+                <li class="collection-item ">
+
+                             {{post.title|truncatewords:10}}
+
+                        <a href="{{post.id}}" class="secondary-content">
+                            <i class="material-icons">chevron_right</i>
+                        </a>
+
+                </li>
+                {% endfor %}
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+    <div class="row hide-on-med-and-down">
+        <div class="col s12">
+            <div class="blog-news-feed">
+                <div class="fb-page" data-href="https://www.facebook.com/aserviceindia/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/aserviceindia/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/aserviceindia/">A'services</a></blockquote></div>
+                <div id="fb-root"></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.11';
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>

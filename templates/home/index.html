@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% load staticfiles %} {% block content %}
+
+
+  <div class="parallax-container">
+    <div class="parallax"><img src="/static/images/giphy.gif"></div>
+      <div class="row">
+       <div class="col s12 m12">
+            <h1 class="header center-on-small-only">Stay tuned !</h1>
+            <h4 class="light blue-text text-lighten-4 center-on-small-only">Sub</h4>
+        </div>
+    </div>
+  </div>
+
+
+
+
+<!--Import jQuery before materialize.js-->
+<script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="{% static 'js/materialize.js' %}"></script>
+<script>
+    $(document).ready(function(){
+      $('.parallax').parallax();
+    });
+</script>
+
+
+
+{% endblock content %}
+
+{% block script %}
+
+{% endblock script %}

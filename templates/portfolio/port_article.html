@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+
+
+<div class="blog">
+    <div class="article-banner row ">
+
+        <div class="article-banner-image valign-wrapper">
+            <img src="{{port_article.image.url}}" class="">
+        </div>
+
+    </div>
+    <div class="blog-content row custom-container">
+        <div class="col s12 m9 card article">
+            <div class="article-container">
+                 <div class="artice-heading">
+                <h4 class="left-align">{{port_article.card_title}}</h4>
+            </div>
+            <div class="article-content ">
+                {{port_article.content}}
+            </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+    {% endblock content %}
+
+    {% block script %}
+    <script>
+        $(document).ready(function(){
+            $('.materialboxed').materialbox();
+        });
+
+    </script>
+    {% endblock script %}
