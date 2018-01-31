@@ -9,14 +9,14 @@
                 Blog
             </h1>
             <p class=" blog-banner-subheading center">
-                Articles from the land of the rising sun
+                Articles from the land of rising sun
             </p>
         </div>
     </div>
-    <div class="blog-content custom-container row">
 
+    <div class="blog-content custom-container row">
         <div class="col s12 m12 l9">
-            <div class="row blog-list">
+            <div class=" blog-list">
                 <div class="col s12">
 
                     <div class="row blog-list-item">
@@ -25,41 +25,59 @@
                         {% for obj in all_posts %}
 
                         <div class="col s12 m12 l6">
-                             <a href="{{obj.id}}" class="no-decoration">
+                             <!--<a href="{{obj.id}}" class="no-decoration">-->
+                             <a href="{% url 'blog:article' obj.id %}" class="no-decoration">
+
                             <div class="card">
                                 <div class="card-image valign-wrapper">
-                                    <img src="{{obj.image.url}}" class="responsive-img-kai">
+                                    <img src="{{obj.image.url}}" class="responsive-img-abhi">
                                     <span class="card-title">
-                                    {{obj.title|truncatechars:100}}
+                                    {{obj.title|truncatechars:20}}
                                 </span>
                                 </div>
-
                                 <div class="card-content">
-                                    <p>{{obj.content|truncatechars:120}}</p>
+                                    <p>{{obj.content|truncatechars:70}}</p>
                                 </div>
                                 <div class="card-action">
-                                    <a href="{{obj.id}}">Read more</a>
+                                    <span style="color:black;"><small>{{obj.publish}}</small></span>
+                                    <a href="{% url 'blog:article' obj.id %}" style="text-transform: capitalize;">Read more...</a>
                                 </div>
+
                             </div>
                              </a>
                         </div>
                         {% endfor %}
+                        {% else %}
+
+                        <h2 class="center">No results found for this query</h2>
+                        <p class="center">Kindly search again with a different keyword</p>
+
                         {% endif %}
                     </div>
-
-
                 </div>
+
+
                 <div class="center">
-                    <ul class="pagination">
-                        <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
-                        <li class="active"><a href="#!">1</a></li>
-                        <li class="waves-effect"><a href="#!">2</a></li>
-                        <li class="waves-effect"><a href="#!">3</a></li>
-                        <li class="waves-effect"><a href="#!">4</a></li>
-                        <li class="waves-effect"><a href="#!">5</a></li>
-                        <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
-                    </ul>
+                    <div class="pagination">
+                        <h5 class="black_colour"><span class="step-links">
+                            {% if all_posts.has_previous %}
+                                <a href="?page=1">&laquo; first |</a>
+                                <a href="?page={{ all_posts.previous_page_number }}">previous.</a>
+                            {% endif %}
+
+                            <span  class="current">
+                                Page {{ all_posts.number }} of {{ all_posts.paginator.num_pages }}.
+                            </span>
+
+                            {% if all_posts.has_next %}
+                                <a href="?page={{ all_posts.next_page_number }}">next |</a>
+                                <a href="?page={{ all_posts.paginator.num_pages }}">last &raquo;</a></h5>
+                            {% endif %}
+                        </span>
+                    </div>
                 </div>
+
+
             </div>
         </div>
         <div class="col s12 m12 l3 ">
@@ -67,7 +85,8 @@
         </div>
     </div>
 
-</div>
+
+
 
 
 
@@ -78,3 +97,4 @@
 {% block script %}
 
 {% endblock script %}
+

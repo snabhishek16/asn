@@ -1,0 +1,169 @@
+
+
+@media  screen and (max-width:1024px){
+
+
+    .cd-timeline-content h2 {
+        font-size:18px !important;
+        margin-top:5px;
+    }
+
+    .about-heading {
+        border-left: 2px solid black;
+        margin: 3em 0;
+    }
+    .cd-timeline-img i {
+        padding: 7px;
+        color: white;
+    }
+    .home-services-panel {
+        height:auto;
+        border: 1px solid #cae0e7;
+    }
+
+    .about-top-heading {
+        text-align: left;
+        font-size: 18px;
+        font-weight: 300;
+        border:2px solid #E1E1E1;
+        padding:20px;
+        color: #999;
+    }
+
+    .about-top-heading1 {
+        margin-bottom: 17px;
+        margin-top: 100px;
+    }
+
+    .about-heading-main {
+        background: #f7f9fa;
+        height: 200px;
+    }
+
+
+
+    .about-heading {
+        margin-left: 2px;
+    }
+
+
+    .b-home-feature-bottom {
+        border-bottom: none;
+    }
+
+    .b-home-feature-top {
+        border-top: none;
+    }
+
+    .b-home-feature-left {
+        border-left: none;
+    }
+
+    .b-home-feature-right {
+        border-right: none;
+    }
+
+    .home-features {
+        padding: 0;
+    }
+    .home-features-row {
+        padding:0;
+    }
+
+    .home-services-filler {
+        border-right: 1px solid #cae0e7;
+        border-left: 1px solid #cae0e7;
+        height:30px;
+    }
+
+    .blog .card-title {
+        font-size:1.3rem;
+    }
+
+    .service-heading-banner {
+        background: #f7f9fa;
+        height: 200px;
+    }
+
+    .blog-banner {
+        background: #f7f9fa;
+        height: 200px;
+    }
+
+    .about-heading-main {
+        background: #f7f9fa;
+        height: 87px;
+        margin-bottom: 0;
+    }
+
+    .parallax-container {
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+  background: rgba(127, 127, 127, 0.1);
+  background-image: radial-gradient(black 20%, transparent 20%);
+  background-size: 4px 4px;
+}
+
+    .about-heading-plain1 {
+        font-weight: 100;
+        margin-top: 15px;
+    }
+    .blog-banner {
+        background: #f7f9fa;
+        height: 87px;
+    }
+
+    .blog-banner h1 {
+        font-weight: 100;
+        margin-top: 15px;
+
+    }
+
+    .service-heading-banner h1 {
+        font-weight: 100;
+        margin-top: 15px
+    }
+
+    .service-heading-banner {
+        background: #f7f9fa;
+        height: 87px;
+    }
+
+    .service-heading-banner h1 {
+        font-weight: 100;
+        margin-top: 15px !important;
+    }
+
+    .picture-portfolio3 {
+        padding:30px 10%;
+        background: black;
+    }
+
+    .blog-banner {
+	background-color: #ed7669;
+    }
+
+
+    .article-banner-image {
+    height: 200px;
+	overflow:hidden;
+}
+
+    .img {
+    height: 200px;
+	overflow:hidden;
+}
+
+
+
+    .card .card-image .card-title {
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  padding: 24px;
+}
+}
+

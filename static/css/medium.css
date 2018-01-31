@@ -1,0 +1,61 @@
+
+
+@media  (min-width: 991px) and (max-width:1024px ){
+.cd-timeline-img i {
+    padding: 18px !important;
+    color: white;
+}
+
+
+    #cd-timeline {
+            width: 100%;
+}
+
+    .cd-timeline-content .cd-date {
+    position: absolute;
+    width: 100%;
+    left: 122%;
+    top: 6px;
+        padding:12px;
+    font-size: 16px;
+    font-size: 1rem;
+}
+
+    .cd-container {
+  /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
+      width: 90%;
+      max-width: 1024px;
+      margin: 0;
+}
+    .studio-features-subheading {
+    font-size: 2.1rem;
+    height: 130px;
+    }
+
+    .main-body {
+	margin-left: 280px;
+    }
+
+
+    .article-banner-image {
+	overflow:hidden;
+}
+
+    .parallax-container {
+  position: relative;
+  overflow: hidden;
+  height: 500px;
+  background: rgba(127, 127, 127, 0.1);
+  background-image: radial-gradient(grey 20%, transparent 20%);
+  /*background-size: 44px 44px;*/
+}
+
+    /*.main-body {*/
+	/*margin-left: 280px;*/
+    /*}*/
+
+}
+
+
+
+

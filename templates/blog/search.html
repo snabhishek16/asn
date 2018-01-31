@@ -1,10 +1,80 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+<div class="blog">
+    <div class="row blog-banner valign-wrapper">
+        <div class="col s12">
+            <h1 class=" blog-banner-heading center">
+                Blog
+            </h1>
+            <p class=" blog-banner-subheading center">
+                Articles from the land of the rising sun
+            </p>
+        </div>
+    </div>
+    <div class="blog-content custom-container row">
+
+        <div class="col s12 m12 l9">
+            <div class="row blog-list">
+                <div class="col s12">
+
+                    <div class="row blog-list-item">
+                        {% if all_posts %}
+
+                        {% for obj in all_posts %}
+
+                        <div class="col s12 m12 l6">
+                             <a href="{{obj.id}}" class="no-decoration">
+                            <div class="card">
+                                <div class="card-image valign-wrapper">
+                                    <img src="{{obj.image.url}}" class="responsive-img-abhi">
+                                    <span class="card-title">
+                                    {{obj.title|truncatechars:40}}
+                                </span>
+                                </div>
+
+                                <div class="card-content">
+                                    <p>{{obj.content|truncatechars:120}}</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="{{obj.id}}">Read more</a>
+                                </div>
+                            </div>
+                             </a>
+                        </div>
+                        {% endfor %}
+                        {% endif %}
+                    </div>
+
+
+                </div>
+                <div class="center">
+                    <ul class="pagination">
+                        <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                        <li class="active"><a href="{{page1.id}}">1</a></li>
+                        <li class="waves-effect"><a href="{{page2.id}}">2</a></li>
+                        <li class="waves-effect"><a href="{{page3.id}}">3</a></li>
+                        <li class="waves-effect"><a href="{{page4.id}}">4</a></li>
+                        <li class="waves-effect"><a href="{{page5.id}}">5</a></li>
+                        <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m12 l3 ">
+            {% include 'blog/blog-sidebar.html' %}
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+{% endblock content %}
+
+{% block script %}
+
+{% endblock script %}

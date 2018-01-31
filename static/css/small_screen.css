@@ -1,0 +1,349 @@
+
+
+@media  screen and (max-width:600px ){
+
+
+    .mobile-full-width {
+        width:100%;
+    }
+    .btn-sm {
+        padding-bottom: .25rem;
+        padding-left: .5rem;
+        padding-right: .5rem;
+        font-size: .7rem;
+        border-radius: .2rem;
+        height: 2.3em;
+        line-height: 2.5em;
+    }
+    .btn-sm i {
+        font-size: 1.5em;
+        line-height: 1.5em;
+    }
+
+    h1 {
+        font-size: 2.9rem !important;
+        font-weight: 500;
+    }
+    h2 {
+        font-size: 2.2rem !important;
+        font-weight: 500;
+    }
+    h3 {
+        font-size: 1.7rem !important;
+        font-weight: 500;
+    }
+    h4 {
+        font-size: 1.4rem !important;
+        font-weight: 500;
+    }
+    h5 {
+        font-size: 1rem !important;
+        font-weight: 500;
+    }
+    h6 {
+        font-size: 0.8rem !important;
+        font-weight: 500;
+    }
+
+    .banner{
+        background: url("../images/banner.jpg") no-repeat;
+        background: none;
+        height: 100%;
+        background-position: right 2px;
+    }
+
+    .big-banner{
+        background:#e3eefc;
+        margin-bottom: 0px;
+        height: 400px;
+    }
+
+    .why-img-leftright {
+        height: 12%;
+        width: auto;
+    }
+
+    .why-section h3 {
+        font-weight: 400;
+    }
+
+    .b-home-feature-bottom {
+        border-bottom: none;
+    }
+
+    .b-home-feature-top {
+        border-top: none;
+    }
+
+    .b-home-feature-left {
+        border-left: none;
+    }
+
+    .b-home-feature-right {
+        border-right: none;
+    }
+    .home-features-item{
+        padding-top:2% !important;
+        height:250px;
+    }
+
+    .home-features-img img {
+        height:110px;
+        width:auto;
+        margin:0 auto;
+        margin-bottom:1%;
+    }
+
+    .home-services {
+        margin:0;
+    }
+
+    .home-features-btn1 {
+        border:1px solid #1D8BF1;
+        margin-bottom:3%;
+    }
+
+    .home-features-btn2 {
+        border:1px solid #FE564D;
+    }
+
+    .home-services-filler{
+        display: none;
+    }
+    .footer-language-select {
+        margin:0 auto;
+        padding:0 25%;
+    }
+
+    .footer-social-icons {
+
+        text-align: center;
+    }
+    .banner-text {
+        margin-top: 70px;
+    }
+
+ .banner-text1 {
+        margin-top: 70px;
+    }
+
+    .home-services-header h4 {
+        margin:16px 0 !important;
+        text-align: center;
+
+    }
+
+    .home-services-content  h5{
+        text-align: center;
+    }
+    .home-services-panel p {
+        display:none;
+    }
+    .contact-modal.modal.bottom-sheet {
+        top: auto;
+        bottom: -100%;
+        margin: 0;
+        width: 100%;
+        max-height: 88%;
+
+    }
+
+
+    .contact-modal .modal-content{
+
+        padding:24px 0;
+    }
+
+    .about-contact-text p {
+        color:#555;
+        font-weight: 300;
+        font-size:11px;
+    }
+
+    .blog .card-image {
+        overflow: hidden;
+        /*height:300px;*/
+    }
+
+    .blog .card-image img{
+
+    }
+
+    .service-hover-heading {
+        font-weight: 300;
+        margin-top: 11%;
+        margin-bottom: -7%;
+        text-align: center;
+    }
+    .service-hover {
+        background: #ddd;
+        background: linear-gradient(#ffffff, #eaeaea);
+        margin: 0;
+    }
+
+    .thumb {
+        width: 200px;
+        height: 200px;
+        margin: 95px auto;
+        perspective: 1000px;
+    }
+
+    .portfolio-video {
+        min-width: 100%;
+        height: 500px;
+
+    }
+
+    .cg .video-container {
+        height:500px;
+    }
+
+    .video-overlay1 {
+        position: absolute;
+        top: 55%;
+        left: 5%;
+        text-align: left;
+    }
+
+    .service-hover-section img {
+        border: 3px solid white;
+        width: 200px;
+        margin-top: 30px;
+    }
+
+    .service-hover-section p {
+        font-size: 1.2em;
+        font-weight: 300;
+        text-align: center;
+        margin: 36px 0;
+    }
+    .cg-features {
+        padding-top:0;
+        padding-bottom: 64px;
+        background: url(../images/cg3.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .picture-portfolio {
+        background: #EFEFBB;
+        background: -webkit-linear-gradient(to left, #D4D3DD, #EFEFBB);
+        background: linear-gradient(to left, #D4D3DD, #EFEFBB);
+        padding-bottom: 90px;
+    }
+
+
+
+    .service-hover-header h2{
+        margin:20px 0;
+        display: none;
+    }
+
+    .studio-features {
+        padding:11% 0;
+    }
+
+    .studio-features2 {
+        padding:11% 0;
+    }
+    .studio-features2-section {
+        margin-left: 10px;
+    }
+
+
+    .banner-text h1 {
+        font-size:1.9rem !important;
+    }
+
+    .access-send-btn {
+        margin-left: 11px;
+        width: 100%;
+    }
+
+    .sidenav-bottom {
+        color: black;
+        position: absolute;
+        bottom: 12%;
+        z-index: 7;
+        left:0;
+        background: #efefef;
+        width: 100%;
+        font-size: 20px;
+        color: #555;
+        padding-left: 25%;
+        /* text-align: center; */
+    }
+
+    .sidenav-bottom1 {
+        color: black;
+        position: absolute;
+        bottom: 12%;
+        left: 0;
+        z-index: 7;
+        background: #efefef;
+        width: 100%;
+        font-size: 20px;
+        color: #555;
+        padding-left: 26%;
+        /* text-align: center; */
+    }
+
+    .video-container {
+	background: url("../images/vidStatic.png");
+        background-size: cover;
+}
+
+      .banner{
+        background: url("../images/banner.jpg") no-repeat;
+        height: 100%;
+        background-position: 21% 98%;    }
+
+      .access-send-btn {
+          margin-bottom:15px;
+      }
+
+      .main-body {
+	margin-left: 0px !important;
+    }
+
+      .w3-light-grey {
+          color: lightgrey;
+      }
+
+
+.article-banner-image {
+    height: 250px;
+	overflow:hidden;
+
+
+
+    .slider {
+	height: 600px !important;
+}
+
+.slides {
+	height: 600px !important;
+}
+
+
+      nav i,
+nav [class^="mdi-"], nav [class*="mdi-"],
+nav i.material-icons {
+  display: block;
+  font-size: 24px;
+  height: 24px;
+  line-height: 24px;
+}
+
+      /*.parallax-container {*/
+  /*position: relative;*/
+  /*overflow: hidden;*/
+  /*height: 400px;*/
+  /*background: rgba(127, 127, 127, 0.1);*/
+  /*background-image: radial-gradient(black 20%, transparent 20%);*/
+  /*background-size: 5px 5px;*/
+/*}*/
+
+
+}
+

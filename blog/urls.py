@@ -15,9 +15,19 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from . import views as blog_views
+
+from .views import (
+posts_list,
+article,
+search_category,
+search_blog,
+)
 
 urlpatterns = [
-    url(r'^$',  blog_views.posts_list,name='blogs'),
-    url(r'^(?P<id>\d+)$',  blog_views.article,name='article'),
+    url(r'^$', posts_list,name='blogs'),
+    url(r'^(?P<id>\d+)/$', article,name='article'),
+    url('^search/', search_blog, name='search_blog'),
+    url('(?P<name>[\w-]+)/$', search_category, name='search_category')
+
+
 ]
