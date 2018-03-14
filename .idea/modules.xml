@@ -3,8 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../../hathlogic/hl/.idea/hl.iml" filepath="$PROJECT_DIR$/../../hathlogic/hl/.idea/hl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../md/machinedata/.idea/machinedata.iml" filepath="$PROJECT_DIR$/../../md/machinedata/.idea/machinedata.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/mypjt.iml" filepath="$PROJECT_DIR$/.idea/mypjt.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../smallworld/smw/.idea/smw.iml" filepath="$PROJECT_DIR$/../../smallworld/smw/.idea/smw.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../tamadmin/adminpanel/.idea/tamakoshi.iml" filepath="$PROJECT_DIR$/../../tamadmin/adminpanel/.idea/tamakoshi.iml" />
     </modules>
   </component>
 </project>

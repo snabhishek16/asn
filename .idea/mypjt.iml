@@ -6,5 +6,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="hl" />
     <orderEntry type="module" module-name="smw" />
+    <orderEntry type="module" module-name="tamakoshi" />
+    <orderEntry type="module" module-name="machinedata" />
   </component>
 </module>

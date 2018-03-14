@@ -5,11 +5,11 @@
 <div class="blog">
     <div class="row blog-banner valign-wrapper">
         <div class="col s12">
-            <h1 class=" blog-banner-heading center">
+            <h1 class=" blog-banner-heading White-text center">
                 Blog
             </h1>
-            <p class=" blog-banner-subheading center">
-                Articles from the land of rising sun
+            <p class=" blog-banner-subheading White-text center">
+                 Few write-up's
             </p>
         </div>
     </div>
@@ -38,6 +38,7 @@
                                 <div class="card-content">
                                     <p>{{obj.content|truncatechars:70}}</p>
                                 </div>
+
                                 <div class="card-action">
                                     <span style="color:black;"><small>{{obj.publish}}</small></span>
                                     <a href="{% url 'blog:article' obj.id %}" style="text-transform: capitalize;">Read more...</a>

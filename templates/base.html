@@ -2,9 +2,9 @@
 
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
-    <title>{% block title %} Asn {% endblock title %}</title>
+    <title>{% block title %} Abhishek SN Gowda {% endblock title %}</title>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -39,35 +39,36 @@
 <div>
     <ul id="slide-out" class="side-nav fixed hide-on-small-only" style="transform: translateX(0%);">
         <div class="user-view">
-            <div class="background">
-                <img src="/static/images/Summerland.JPG">
+            <div class="background" >
+                <img src="/static/images/DPP_0031-EFFECTS.jpg">
             </div>
-            <a href="{% url 'about:about' %}"><img class="circle" src="/static/images/sample.JPG"></a>
-            <span class="Black-text name bold"><h3>Abhishek SN</h3></span>
+            <div class="on-background" >
+                <a href="{% url 'about:about' %}"><img class="circle" src="/static/images/sample.JPG"></a>
+                <span class="White-text name center bold"><h3>Abhishek SN</h3></span>
+            </div>
         </div>
 
 
-        <div class="w3-container">
-            <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large" aria-hidden="true"></i>Japanese Bilingual,</p>
-            <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-white" aria-hidden="true"></i>Python(Django)</p>
-            <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-white" aria-hidden="true"></i>Beginner web developer</p>
-            <p><i class="fa fa-home fa-fw w3-margin-right w3-large"></i>Bengaluru, IND</p>
-            <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large"></i>snabhishek16@gmail.com</p>
-            <p><i class="fa fa-phone fa-fw w3-margin-right w3-large"></i>7899737173</p>
-            <p><i class="fa fa-spinner fa-fw w3-margin-right w3-large hide-on-large-only"></i>
-                     <a class="fa fa-facebook hide-on-large-only" aria-hidden="true" href="http://www.facebook.com/abhishek.sn.me" title="Like me on Facebook" target="_blank"></a>
-                     <a class="fa fa-instagram hide-on-large-only" aria-hidden="true" href="http://www.instagram.com/snabhishek16" title="Love me on Insta" target="_blank"></a>
-                     <a class="fa fa-linkedin hide-on-large-only" aria-hidden="true" href="https://www.linkedin.com/in/abhishek-sn-gowda-52118b88/" title="Connect with me on Linkedin" target="_blank"></a>
-                     <!--<a class="fa fa-github hide-on-large-only" aria-hidden="true" href="https://github.com/snabhishek16" title="Connect with me on Github" target="_blank"></a>-->
-                     <!--<a class="fa fa-twitter hide-on-large-only" aria-hidden="true" href="https://twitter.com/snabhishek16" title="Tweet me on Twitter" target="_blank"></a>-->
-                     <a class="fa fa-skype hide-on-large-only" aria-hidden="true" href="skype:snabhishek16" title="Connect with me on Skype" target="_blank"></a>
-                     <!--<a class="fa fa-whatsapp hide-on-large-only" aria-hidden="true" href="intent://send/7899737173#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end" title="Ping me on whatsapp"></a></li>-->
-                    <!--<li> <a class="fa fa-spinner" aria-hidden="true" title="Poke me" onclick="Materialize.toast('Ouuccchhhh!', 4000,'rounded',function(){alert('Do not repeat')})"></a></li>-->
-                </p>
+        <div class="w3-container1">
+            <div class="row">
+                <div class ="col s2 m2 l2">
+                    <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-text-icon w3-large" aria-hidden="true"></i></p>
+                    <br>
+                    <p><i class="fa fa-home fa-fw w3-margin-right w3-text-icon w3-large"></i></p>
+                    <p><i class="fa fa-envelope fa-fw w3-margin-right w3-text-icon w3-large"></i></p>
+                    <p><i class="fa fa-phone fa-fw w3-margin-right w3-text-icon w3-large"></i></p></div>
 
+                <div class ="col s10 m10 l10">
+                    <p>Japanese Bilingual,<br>Python (Django) Beginner web developer</p>
+                    <p></p>
+                    <p>Bengaluru, IND</p>
+                    <p>snabhishek16@gmail.com</p>
+                    <p></i>7899737173</p>
+                </div>
+            </div>
 
             <hr>
-            <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right"></i>Skills</b></p>
+            <p class="w3-large w3-text-grey"><b><i class="fa fa-asterisk fa-fw w3-margin-right-1 w3-text-icon "></i>Skills</b></p>
             <p>Python (Django)</p>
             <div class="w3-light-grey w3-round-xlarge w3-small">
                 <div class="w3-container w3-center w3-round-xlarge w3-red" style="width:40%">40%</div>
@@ -85,7 +86,7 @@
             <br>
             <hr>
 
-            <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right"></i>Languages</b></p>
+            <p class="w3-large w3-text-grey"><b><i class="fa fa-globe fa-fw w3-margin-right-1 w3-text-icon"></i>Languages</b></p>
             <p>English</p>
             <div class="w3-light-grey w3-round-xlarge">
                 <div class="w3-round-xlarge w3-red" style="height:24px;width:85%"></div>
@@ -105,110 +106,103 @@
 <div class="main-body">
     <nav class="nav-extended ">
         <div class="nav-content ">
-                <div class="col l6 s12 ">
             <ul class="tabs tabs-transparent hide-on-small-only">
-                <a href="#" data-activates="nav-mobile" class="button-collapse top-nav waves-effect waves-light circle hide-on-med-only hide-on-large-only"><i class="material-icons">menu</i></a>
+                <div class="w3-padding-top">
+                <!--<a href="#" data-activates="nav-mobile" class="button-collapse top-nav waves-effect waves-light circle hide-on-med-only hide-on-large-only"><i class="material-icons">menu</i></a>-->
+
                 <li><a target="_self" href="{% url 'index' %}">HOME</a></li>
                 <li><a target="_self" href="{% url 'about:about' %}">ABOUT</a></li>
                 <li><a target="_self" href="{% url 'portfolio:portfolio' %}">PORTFOLIO</a></li>
                 <li><a target="_self" href="{% url 'blog:blogs' %}">BLOGS</a></li>
                 <li><a target="_self"  href="#modal1" data-activates="slide-out" class="collapse modal-trigger">CONTACT</a></li>
-
-                <ul class="social hide-on-med-and-down">
-                    <li> <a class="fa fa-facebook" aria-hidden="true" href="http://www.facebook.com/abhishek.sn.me" title="Like me on Facebook" target="_blank"></a></li>
-                    <li> <a class="fa fa-instagram" aria-hidden="true" href="http://www.instagram.com/snabhishek16" title="Love me on Insta" target="_blank"></a></li>
-                    <li> <a class="fa fa-linkedin" aria-hidden="true" href="https://www.linkedin.com/in/abhishek-sn-gowda-52118b88/" title="Connect with me on Linkedin" target="_blank"></a></li>
-                    <li> <a class="fa fa-github" aria-hidden="true" href="https://github.com/snabhishek16" title="Connect with me on Github" target="_blank"></a></li>
-                    <li> <a class="fa fa-twitter" aria-hidden="true" href="https://twitter.com/snabhishek16" title="Tweet me on Twitter" target="_blank"></a></li>
-                    <li> <a class="fa fa-skype" aria-hidden="true" href="skype:snabhishek16" title="Connect with me on Skype" target="_blank"></a></li>
-                    <!--<li> <a class="fa fa-whatsapp" aria-hidden="true" href="intent://send/7899737173#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end" title="Ping me on whatsapp"></a></li>-->
-                    <!--<li> <a class="fa fa-spinner" aria-hidden="true" title="Poke me" onclick="Materialize.toast('Ouuccchhhh!', 4000,'rounded',function(){alert('Do not repeat')})"></a></li>-->
-                </ul>
-            </ul>
                 </div>
+
+                <ul class="social center w3-minus-top">
+                <a href="{% url 'index' %}" class="no-decoration"><img src="{% static 'images/ASN_brand_logo.png' %}" alt="logo" class="brand-logo-img"></a>
+                </ul>
+
+            </ul>
+
+            <!--<span class="logo-holder">-->
+            <!--<a href="{% url 'index' %}" class="no-decoration"><img src="{% static 'images/ASN_brand_logo.png' %}" alt="logo" class="brand-logo-img"></a>-->
+            <!--</span>-->
+
         </div>
     </nav>
-
 
     <nav class="nav-extended ">
         <div class="nav-content hide-on-med-only hide-on-large-only">
             <div class="col l6 s12 ">
-                <ul class="tabs tabs-transparent ">
-                    <a href="#" data-activates="nav-mobile" class="button-collapse top-nav waves-effect waves-light circle hide-on-med-only hide-on-large-only"><i class="material-icons">menu</i></a>
-                    <ul id="nav-mobile" class="side-nav" style="transform: translateX(0px);">
+                <ul class="tabs tabs-transparent">
+                    <ul>
+                        <a href="#" data-activates="nav-mobile" class="button-collapse top-nav waves-effect waves-light circle hide-on-med-only hide-on-large-only"><i class="material-icons">menu</i></a>
+                        <ul class="social center">
+                        <a href="{% url 'index' %}" class="no-decoration"><img src="{% static 'images/ASN_brand_logo.png' %}" alt="logo" class="brand-logo-img1"></a>
+                            </ul>
+                        <ul id="nav-mobile" class="side-nav" style="transform: translateX(0px);">
 
-                        <div class="user-view">
-                            <div class="background">
-                                <img src="/static/images/Summerland.JPG">
+                            <div class="user-view">
+                                <div class="background" >
+                                    <img src="/static/images/DPP_0031-EFFECTS.jpg">
+                                </div>
+                                <div class="on-background" >
+                                    <a href="{% url 'about:about' %}"><img class="circle" src="/static/images/sample.JPG"></a>
+                                    <span class="White-text name center bold"><h3>Abhishek SN</h3></span>
+                                </div>
                             </div>
-                            <a href="{% url 'about:about' %}"><img class="circle" src="/static/images/sample.JPG"></a>
-                            <span class="Black-text name bold"><h3>Abhishek SN</h3></span>
-                        </div>
-                        <li><a target="_self" href="{% url 'index' %}">HOME</a></li>
-                        <li><a target="_self" href="{% url 'about:about' %}">ABOUT</a></li>
-                        <li><a target="_self" href="{% url 'portfolio:portfolio' %}">PORTFOLIO</a></li>
-                        <li><a target="_self" href="{% url 'blog:blogs' %}">BLOGS</a></li>
-                        <li><a target="_self"  href="#modal1" data-activates="slide-out" class="collapse modal-trigger">CONTACT</a></li>
-                        <hr>
-
-
-
-
-                        <div class="w3-container black-text">
-                            <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large" aria-hidden="true"></i>Japanese Bilingual,</p>
-                            <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-white" aria-hidden="true"></i>Python(Django)</p>
-                            <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-white" aria-hidden="true"></i>Beginner web developer</p>
-                            <p><i class="fa fa-home fa-fw w3-margin-right w3-large"></i>Bengaluru, IND</p>
-                            <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large"></i>snabhishek16@gmail.com</p>
-                            <p><i class="fa fa-phone fa-fw w3-margin-right w3-large"></i>7899737173</p>
-                            <hr>
-                            <p class="w3-small"><b><i class="fa fa-asterisk fa-fw w3-margin-right"></i>Skills</b></p>
-                            <p>Python (Django)</p>
-                            <div class="w3-light-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-red" style="width:40%">40%</div>
-                            </div>
-                            <p>Japanese interpretation</p>
-                            <div class="w3-light-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-red" style="width:75%">
-                            <div class="w3-center w3-text-white">75%</div>
-                            </div>
-                            </div>
-                            <p>Project management</p>
-                            <div class="w3-light-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-red" style="width:85%">85%</div>
-                            </div>
-                            <br>
+                            <li><a target="_self" href="{% url 'index' %}">HOME</a></li>
+                            <li><a target="_self" href="{% url 'about:about' %}">ABOUT</a></li>
+                            <li><a target="_self" href="{% url 'portfolio:portfolio' %}">PORTFOLIO</a></li>
+                            <li><a target="_self" href="{% url 'blog:blogs' %}">BLOGS</a></li>
+                            <li><a target="_self"  href="#modal1" data-activates="slide-out" class="collapse modal-trigger">CONTACT</a></li>
                             <hr>
 
-                            <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right"></i>Languages</b></p>
-                            <p>English</p>
-                            <div class="w3-light-grey w3-round-xlarge">
-                            <div class="w3-round-xlarge w3-red" style="height:24px;width:85%"></div>
-                            </div>
-                            <p>日本語(Japanese)</p>
-                            <div class="w3-light-grey w3-round-xlarge">
-                            <div class="w3-round-xlarge w3-red" style="height:24px;width:75%"></div>
-                            </div>
-                            <p>ಕನ್ನಡ(Kannada)</p>
-                            <div class="w3-light-grey w3-round-xlarge">
-                            <div class="w3-round-xlarge w3-red" style="height:24px;width:100%"></div>
-                            </div>
-                        </div>
-                    </ul>
 
-                    <ul class="social">
-                        <li> <a class="fa fa-facebook" aria-hidden="true" href="http://www.facebook.com/abhishek.sn.me" title="Like me on Facebook" target="_blank"></a></li>
-                        <li> <a class="fa fa-instagram" aria-hidden="true" href="http://www.instagram.com/snabhishek16" title="Love me on Insta" target="_blank"></a></li>
-                        <li> <a class="fa fa-linkedin" aria-hidden="true" href="https://www.linkedin.com/in/abhishek-sn-gowda-52118b88/" title="Connect with me on Linkedin" target="_blank"></a></li>
-                        <li> <a class="fa fa-github" aria-hidden="true" href="https://github.com/snabhishek16" title="Connect with me on Github" target="_blank"></a></li>
-                        <li> <a class="fa fa-twitter" aria-hidden="true" href="https://twitter.com/snabhishek16" title="Tweet me on Twitter" target="_blank"></a></li>
-                        <li> <a class="fa fa-skype" aria-hidden="true" href="skype:snabhishek16" title="Connect with me on Skype" target="_blank"></a></li>
-                        <li> <a class="fa fa-whatsapp" aria-hidden="true" href="intent://send/7899737173#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end" title="Ping me on whatsapp"></a></li>
-                        <!--<li> <a class="fa fa-spinner" aria-hidden="true" title="Poke me" onclick="Materialize.toast('Ouuccchhhh!', 4000,'rounded',function(){alert('Do not repeat')})"></a></li>-->
+
+
+                            <div class="w3-container1 black-text">
+                                <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-text-icon w3-large" aria-hidden="true"></i>Japanese Bilingual,</p>
+                                <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-white" aria-hidden="true"></i>Python (Django)</p>
+                                <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-white" aria-hidden="true"></i>Beginner web developer</p>
+                                <p><i class="fa fa-home fa-fw w3-margin-right w3-text-icon w3-large"></i>Bengaluru, IND</p>
+                                <p><i class="fa fa-envelope fa-fw w3-margin-right w3-text-icon w3-large"></i>snabhishek16@gmail.com</p>
+                                <p><i class="fa fa-phone fa-fw w3-margin-right w3-text-icon w3-large"></i>7899737173</p>
+                                <hr>
+                                <p class="w3-small"><b><i class="fa fa-asterisk fa-fw w3-text-icon w3-margin-right"></i>Skills</b></p>
+                                <p>Python (Django)</p>
+                                <div class="w3-light-grey w3-round-xlarge w3-small">
+                                    <div class="w3-container w3-center w3-round-xlarge w3-red" style="width:40%">40%</div>
+                                </div>
+                                <p>Japanese interpretation</p>
+                                <div class="w3-light-grey w3-round-xlarge w3-small">
+                                    <div class="w3-container w3-center w3-round-xlarge w3-red" style="width:75%">
+                                        <div class="w3-center w3-text-white">75%</div>
+                                    </div>
+                                </div>
+                                <p>Project management</p>
+                                <div class="w3-light-grey w3-round-xlarge w3-small">
+                                    <div class="w3-container w3-center w3-round-xlarge w3-red" style="width:85%">85%</div>
+                                </div>
+                                <hr>
+
+                                <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-text-icon w3-margin-right"></i>Languages</b></p>
+                                <p>English</p>
+                                <div class="w3-light-grey w3-round-xlarge">
+                                    <div class="w3-round-xlarge w3-red" style="height:24px;width:85%"></div>
+                                </div>
+                                <p>日本語(Japanese)</p>
+                                <div class="w3-light-grey w3-round-xlarge">
+                                    <div class="w3-round-xlarge w3-red" style="height:24px;width:75%"></div>
+                                </div>
+                                <p>ಕನ್ನಡ(Kannada)</p>
+                                <div class="w3-light-grey w3-round-xlarge">
+                                    <div class="w3-round-xlarge w3-red" style="height:24px;width:100%"></div>
+                                </div>
+                            </div>
+                        </ul>
                     </ul>
                 </ul>
             </div>
-
         </div>
     </nav>
 
@@ -265,36 +259,40 @@
     {% endblock content %}
 
 
+
     <footer class="page-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <div class="container center show-on-small-only">
-                    <h5 class="white-text">Mission</h5>
-                    <p class="grey-text text-lighten-4">To be a successfull Developer and acquire very good Japanese language skill.
-                        <br> Build and grow your next product.</p>
-                        </div>
-                </div>
-                <div class="col l4 offset-l2 s12">
-                    <div class="container center show-on-small-only">
-                    <a href="#top"><i class="material-icons">keyboard_arrow_up</i></a>
-                    <ul>
-                        <li><a class="grey-text text-lighten-3" target="_self" href="#{% url 'index' %}">Home</a></li>
-                        <li><a class="grey-text text-lighten-3" target="_self" href="{% url 'about:about' %}">About</a></li>
-                        <li><a class="grey-text text-lighten-3" target="_self" href="{% url 'portfolio:portfolio' %}">Portfolio</a></li>
-                        <li><a class="grey-text text-lighten-3" target="_self" href="{% url 'blog:blogs' %}">Blogs</a></li>
-                        <li><a class="grey-text text-lighten-3 collapse modal-trigger" target="_self"  href="#modal1" data-activates="slide-out" >Contact</a></li>
-                    </ul>
-                        </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-copyright">
-            <div class="container center">
-                Copyright 2018 © — made with <a  target="_blank" href="https://www.djangoproject.com/">Django</a>
+        <div class="footer-left center">
+            <p class="footer-links">
+                <a class="grey-text text-lighten-3" target="_self" href="{% url 'index' %}">Home</a>
+                |
+                <a class="grey-text text-lighten-3" target="_self" href="{% url 'about:about' %}">About</a>
+                |
+                <a class="grey-text text-lighten-3" target="_self" href="{% url 'portfolio:portfolio' %}">Portfolio</a>
+                |
+                <a class="grey-text text-lighten-3" target="_self" href="{% url 'blog:blogs' %}">Blogs</a></li>
+                |
+                <a class="grey-text text-lighten-3 collapse modal-trigger" target="_self"  href="#modal1" data-activates="slide-out" >Contact</a>
+            </p>
+            <!--<a href="{% url 'index' %}" class="no-decoration"><img src="{% static 'images/ASN_brand_logo.png' %}" alt="logo" class="brand-logo-img"></a>-->
+
+            <ul class="social center">
+                <a class="fa fa-facebook" aria-hidden="true" href="http://www.facebook.com/abhishek.sn.me" title="Like me on Facebook" target="_blank"></a><span> . </span>
+                <a class="fa fa-instagram" aria-hidden="true" href="http://www.instagram.com/snabhishek16" title="Love me on Insta" target="_blank"></a><span> . </span>
+                <a class="fa fa-linkedin" aria-hidden="true" href="https://www.linkedin.com/in/abhishek-sn-gowda-52118b88/" title="Connect with me on Linkedin" target="_blank"></a><span> . </span>
+                <a class="fa fa-github" aria-hidden="true" href="https://github.com/snabhishek16" title="Connect with me on Github" target="_blank"></a><span> . </span>
+                <a class="fa fa-twitter" aria-hidden="true" href="https://twitter.com/snabhishek16" title="Tweet me on Twitter" target="_blank"></a><span> . </span>
+                <a class="fa fa-skype" aria-hidden="true" href="skype:snabhishek16" title="Connect with me on Skype" target="_blank"></a><span> . </span>
+                <a class="fa fa-whatsapp" aria-hidden="true" href="intent://send/7899737173#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end" title="Ping me on whatsapp"></a>
+                <!--<li> <a class="fa fa-spinner" aria-hidden="true" title="Poke me" onclick="Materialize.toast('Ouuccchhhh!', 4000,'rounded',function(){alert('Do not repeat')})"></a></li>-->
+            </ul>
+
+            <div class="w3-padding-small">
+                <small>Copyright 2018 &copy; — made with <a  target="_blank" href="https://www.djangoproject.com/">Django</a></small>
             </div>
         </div>
     </footer>
+
+
 
 
 

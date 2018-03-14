@@ -142,8 +142,26 @@
 
     .blog-banner {
 	background-color: #ed7669;
-    }
+	height: 130px;
 
+}
+
+.blog-banner h1 {
+	font-weight: 100;
+	padding-top: 10px;
+}
+
+.blog-banner p {
+	font-weight: 100;
+	padding-top: 0px;
+	padding-bottom: 10px;
+}
+
+
+.blog-content {
+	height:auto;
+	padding: 5px 15px;
+}
 
     .article-banner-image {
     height: 200px;
@@ -165,5 +183,14 @@
   max-width: 100%;
   padding: 24px;
 }
+
+   .side-nav .user-view .circle,
+.side-nav .userView .circle {
+  height: 100px;
+  width: 100px;
+  margin-left: 50px;
+}
+
+
 }
 

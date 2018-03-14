@@ -5,11 +5,11 @@
 <div class="blog">
     <div class="row blog-banner valign-wrapper">
         <div class="col s12">
-            <h1 class=" blog-banner-heading center">
+            <h1 class=" blog-banner-heading White-text center">
                 Portfolio
             </h1>
-            <p class=" blog-banner-subheading center">
-                Lorem ipsum
+            <p class=" blog-banner-subheading White-text center">
+                Insight
             </p>
         </div>
     </div>
@@ -27,14 +27,14 @@
                               <img class="activator" src="{{obj.image.url}}">
                             </div>
                             <div class="card-content">
-                              <span class="card-title activator grey-text text-darken-4">{{obj.card_title}}<i class="material-icons right">more_vert</i></span>
+                              <span class="card-title activator grey-text center text-darken-4">{{obj.card_title}}</span>
                             </div>
-                            <div class="card-action">
-                                <a href="{{obj.id}}">Read more</a>
+                            <div class="card-action" align="center">
+                                <a href="{{obj.id}}" style="text-transform: capitalize;">Read more...</a>
                             </div>
                             <div class="card-reveal">
-                              <span class="card-title grey-text text-darken-4">{{obj.card_title}}<i class="material-icons right">close</i></span>
-                              <p>{{obj.content}}</p>
+                              <span class="card-title grey-text center text-darken-4">{{obj.card_title}}</span>
+                              <p>{{obj.content | linebreaks}}</p>
                             </div>
                         </div>
                 </div>
